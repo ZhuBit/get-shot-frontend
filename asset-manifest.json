@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/get-shot-frontend/static/css/main.6a975f54.chunk.css",
+    "main.js": "/get-shot-frontend/static/js/main.5b961ce5.chunk.js",
+    "main.js.map": "/get-shot-frontend/static/js/main.5b961ce5.chunk.js.map",
+    "runtime-main.js": "/get-shot-frontend/static/js/runtime-main.dfec9325.js",
+    "runtime-main.js.map": "/get-shot-frontend/static/js/runtime-main.dfec9325.js.map",
+    "static/css/2.92c2f793.chunk.css": "/get-shot-frontend/static/css/2.92c2f793.chunk.css",
+    "static/js/2.571e50e7.chunk.js": "/get-shot-frontend/static/js/2.571e50e7.chunk.js",
+    "static/js/2.571e50e7.chunk.js.map": "/get-shot-frontend/static/js/2.571e50e7.chunk.js.map",
+    "static/js/3.6ab99a32.chunk.js": "/get-shot-frontend/static/js/3.6ab99a32.chunk.js",
+    "static/js/3.6ab99a32.chunk.js.map": "/get-shot-frontend/static/js/3.6ab99a32.chunk.js.map",
+    "index.html": "/get-shot-frontend/index.html",
+    "static/css/2.92c2f793.chunk.css.map": "/get-shot-frontend/static/css/2.92c2f793.chunk.css.map",
+    "static/css/main.6a975f54.chunk.css.map": "/get-shot-frontend/static/css/main.6a975f54.chunk.css.map",
+    "static/js/2.571e50e7.chunk.js.LICENSE.txt": "/get-shot-frontend/static/js/2.571e50e7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dfec9325.js",
+    "static/css/2.92c2f793.chunk.css",
+    "static/js/2.571e50e7.chunk.js",
+    "static/css/main.6a975f54.chunk.css",
+    "static/js/main.5b961ce5.chunk.js"
+  ]
+}
