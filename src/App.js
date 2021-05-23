@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+import { withRouter } from "react-router-dom";
+import { Layout } from 'antd';
+import AppMenu from "./components/AppMenu";
+import MainRouter from "./router";
 
 function App() {
+    const { Header, Content, Footer } = Layout;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Layout>
+            <Header className="app-header">
+                <AppMenu />
+            </Header>
+            <Content className='app-content'>
+                <MainRouter />
+            </Content>
+            <Footer className="app-footer">
+                Get Shot 2021
+            </Footer>
+        </Layout>
     </div>
   );
 }
 
-export default App;
+export default  withRouter(App);

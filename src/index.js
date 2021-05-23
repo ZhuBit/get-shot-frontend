@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Router } from "react-router-dom";
+import history from "./utils/history";
+
+require('dotenv').config()
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Router history={history}>
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
+    </Router>,
   document.getElementById('root')
 );
 
