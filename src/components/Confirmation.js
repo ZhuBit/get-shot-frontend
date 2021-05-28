@@ -14,9 +14,7 @@ const Confirmation = () => {
         <>
             <h3>Thank you!</h3>
             <p>You successfully registered for your vaccination</p>
-            {doc.message}
-            <br/><br/>
-            {index < 3 &&  <Button onClick={changeDate}> I want another time</Button>}
+            <p>Check your email</p>
         </>
     )
 }

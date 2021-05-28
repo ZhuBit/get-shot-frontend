@@ -77,6 +77,9 @@ const Vaccination = () => {
     return (
         <div>
             <br/>
+            <h1>Vaccination Process</h1>
+            <br/>
+            <p>Please find patient by insurance number, and start the process by pressing the button "Change Status".</p>
             <br/>
             {patients &&
                 <>
@@ -92,7 +95,7 @@ const Vaccination = () => {
                             option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1
                         }
                     />
-                    <br/>
+                    <br/><br/><br/>
                     {selectedPatient &&
                         <>
                             <Row>
@@ -113,6 +116,26 @@ const Vaccination = () => {
                                 <Col span={6}>
                                     <strong>E-Mail: </strong>
                                     <p>{selectedPatient.email}</p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col span={6}>
+                                    <strong>Sex: </strong>
+                                    {selectedPatient.sex && <p>{selectedPatient.sex}</p>}
+                                </Col>
+                                <Col span={6}>
+                                    <strong>Address: </strong>
+                                    {selectedPatient.address && <p>{selectedPatient.address}</p>}
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col span={6}>
+                                    <strong>Risk Group: </strong>
+                                    {selectedPatient.riskGroup && <p>{selectedPatient.riskGroup}</p>}
+                                </Col>
+                                <Col span={6}>
+                                    <strong>Professions: </strong>
+                                    {selectedPatient.professions && <p>{selectedPatient.professions}</p>}
                                 </Col>
                             </Row>
                             <Row>
