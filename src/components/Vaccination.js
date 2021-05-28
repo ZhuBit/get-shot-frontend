@@ -139,6 +139,22 @@ const Vaccination = () => {
                                 </Col>
                             </Row>
                             <Row>
+                                <Col span={6}>
+                                    <strong>Date of Vaccination: </strong>
+                                    {selectedPatient.date && <p>{selectedPatient.date}</p>}
+                                </Col>
+                                <Col span={6}>
+                                    <strong>Time of Vaccination: </strong>
+                                    <p>10:00 - 11:00</p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col span={9}>
+                                    <strong>Location of Vaccination: </strong>
+                                    <p>Schloss Schönbrunn (13., Schönbrunner Schloßstraße 47)</p>
+                                </Col>
+                            </Row>
+                            <Row>
                                 <Col span={8}>
                                     <strong>Change status: </strong>
                                     {
