@@ -15,6 +15,7 @@ const Confirmation = () => {
             <h3>Thank you!</h3>
             <p>You successfully registered for your vaccination</p>
             <p>Check your email</p>
+            <p>*Email should delivered in up to 15 minutes</p>
         </>
     )
 }

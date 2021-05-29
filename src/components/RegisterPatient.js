@@ -26,18 +26,13 @@ import {addPatient} from "../services/api";
      const [state, setState] = React.useState();
 
      const onChangeSex = e => {
-         console.log('radio checked', e.target.value);
          setSex(e.target.value);
      };
      const onChangeRisiko = e => {
-         console.log('risiko = ', e);
          setRisiko(e)
-         //setchecked(e.target.checked)
      };
      const onChangeProf = e => {
-         console.log('prof = ', e);
          setProf(e)
-         //setchecked(e.target.checked)
      };
      const optionsWithDisabled = [
          { label: 'Allergies', value: ' Allergies ' },
@@ -55,16 +50,12 @@ import {addPatient} from "../services/api";
          values.sex = sex
          values.professions = prof
          setState(values)
-         console.log('Forema =:', state)
          setChooseDate(true)
-         //await addPatient(values)
-         //history.push('/confirm')
      };
      const selectDate = async (date) => {
          let s = state
          s.date = date
          setState(s)
-         console.log(s)
          await addPatient(s)
          history.push('/confirm')
      }
@@ -103,7 +94,7 @@ import {addPatient} from "../services/api";
                      </>:
                      <>
                          <h1>Registration</h1>
-                         <p>Please fill out form in order to get registered fro your vaccination.</p>
+                         <p>Please fill out the form to get registered for your vaccination.</p>
                          <Form
                              form={form}
                              onFinish={onFinish}
@@ -139,7 +130,7 @@ import {addPatient} from "../services/api";
                                         rules={[
                                             { required: true, message: "Please input your phone number" },
                                         ]}>
-                                 <Input placeholder={"Phone Number"} type="text" />
+                                 <Input placeholder={"Phone Number"} type="number" />
                              </Form.Item>
                              <Form.Item
                                  name="DOB"
@@ -204,7 +195,7 @@ import {addPatient} from "../services/api";
                                         ]}
                              >
                                  <p>I give my express consent to the processing of the personal data required for the purpose of pre-registering a vaccination, vaccination planning and internal statistical (anonymised) evaluations.</p>
-                                 <Checkbox onChange={checkBox}  value={value}>Checkbox</Checkbox>
+                                 <Checkbox onChange={checkBox}  value={value}>I agree</Checkbox>
                              </Form.Item>
 
                              <Button type="primary" htmlType="submit">
@@ -216,7 +207,6 @@ import {addPatient} from "../services/api";
          </>
      )
      function checkBox(e) {
-         console.log(`checked = ${e.target.checked}`);
          setValue(e.target.checked)
      }
 

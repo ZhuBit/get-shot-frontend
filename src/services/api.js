@@ -12,7 +12,6 @@ const addPatient = async (values) => {
             },
         );
         const json = await response.json();
-        console.log('response', json)
         return json.data;
     } catch (error) {
         console.log(error);
@@ -24,7 +23,6 @@ const getPatients = async () => {
     try {
         const data = await fetch(`${process.env.REACT_APP_API_URL}/patients`);
         const json = await data.json();
-        console.log(json)
         return json.data;
     } catch (error) {
         console.log(error);

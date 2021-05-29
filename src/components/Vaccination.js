@@ -131,7 +131,7 @@ const Vaccination = () => {
                             <Row>
                                 <Col span={6}>
                                     <strong>Risk Group: </strong>
-                                    {selectedPatient.riskGroup && <p>{selectedPatient.riskGroup}</p>}
+                                    {selectedPatient.riskGroup && <p>{selectedPatient.riskGroup.map(item =>  <Tag color="red">{item}</Tag>)}</p>}
                                 </Col>
                                 <Col span={6}>
                                     <strong>Professions: </strong>
