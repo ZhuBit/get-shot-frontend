@@ -17,6 +17,8 @@ import {addPatient} from "../services/api";
  const RegisterPatient = ({ history }) => {
      const [form] = Form.useForm();
      const [value, setValue] = React.useState(false);
+     const [loading, setLoading] = React.useState(false);
+
 
      const [sex, setSex] = React.useState();
      const [risiko , setRisiko] = React.useState([]);
@@ -53,6 +55,7 @@ import {addPatient} from "../services/api";
          setChooseDate(true)
      };
      const selectDate = async (date) => {
+         setLoading(true)
          let s = state
          s.date = date
          setState(s)
@@ -71,7 +74,8 @@ import {addPatient} from "../services/api";
                                      <p>Date: 14.06.2021</p>
                                      <p>Time: 10:00 - 11:00</p>
                                      <p>Location:  Schloss Schönbrunn (13., Schönbrunner Schloßstraße 47) </p>
-                                     <Button primary onClick={() => selectDate('14.06.2021')}>Select</Button>
+                                     {!loading && <Button primary onClick={() => selectDate('14.06.2021')}>Select</Button>}
+                                     {loading && <Button primary loading>Loading...</Button>}
                                  </Card>
                              </Col>
                              <Col span={8}>
@@ -79,7 +83,8 @@ import {addPatient} from "../services/api";
                                      <p>Date: 21.06.2021</p>
                                      <p>Time: 10:00 - 11:00</p>
                                      <p>Location:  Schloss Schönbrunn (13., Schönbrunner Schloßstraße 47) </p>
-                                     <Button primary onClick={() => selectDate('21.06.2021')}>Select</Button>
+                                     {!loading && <Button primary onClick={() => selectDate('21.06.2021')}>Select</Button>}
+                                     {loading && <Button primary loading>Loading...</Button>}
                                  </Card>
                              </Col>
                              <Col span={8}>
@@ -87,7 +92,8 @@ import {addPatient} from "../services/api";
                                      <p>Date: 28..06.2021</p>
                                      <p>Time: 10:00 - 11:00</p>
                                      <p>Location:  Schloss Schönbrunn (13., Schönbrunner Schloßstraße 47) </p>
-                                     <Button primary onClick={() => selectDate('28.06.2021')}>Select</Button>
+                                     {!loading && <Button primary onClick={() => selectDate('28.06.2021')}>Select</Button>}
+                                     {loading && <Button primary loading>Loading...</Button>}
                                  </Card>
                              </Col>
                          </Row>
