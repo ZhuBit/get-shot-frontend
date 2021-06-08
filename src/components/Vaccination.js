@@ -149,9 +149,13 @@ const Vaccination = () => {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col span={9}>
+                                <Col span={6}>
                                     <strong>Location of Vaccination: </strong>
                                     <p>Schloss Schönbrunn (13., Schönbrunner Schloßstraße 47)</p>
+                                </Col>
+                                <Col span={6}>
+                                    <strong>Vaccine Type: </strong>
+                                    <Tag color="blue">Pfizer</Tag>
                                 </Col>
                             </Row>
                             <Row>
