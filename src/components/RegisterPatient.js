@@ -102,6 +102,7 @@ import {addPatient} from "../services/api";
                          <h1>Registration</h1>
                          <p>Please fill out the form to get registered for your vaccination.</p>
                          <p>*Note this is a test app and not real registration for vaccination process</p>
+                         <p>*It can take up to 30 sec to restart if the app has not been online for longer  periods of time.</p>
             {/*             <p>*App used to demonstrates Workflow for "Workflow Modeling and Process Management" lecture</p>*/}
                          <Form
                              form={form}
