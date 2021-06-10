@@ -101,6 +101,8 @@ import {addPatient} from "../services/api";
                      <>
                          <h1>Registration</h1>
                          <p>Please fill out the form to get registered for your vaccination.</p>
+                         <p>*Note this is a test app and not real registration for vaccination process</p>
+            {/*             <p>*App used to demonstrates Workflow for "Workflow Modeling and Process Management" lecture</p>*/}
                          <Form
                              form={form}
                              onFinish={onFinish}
